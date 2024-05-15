@@ -37,7 +37,7 @@ class _MyAppState extends State<MyApp> with WidgetsBindingObserver {
   }
 
   changeTheme() {
-    var brightness = WidgetsBinding.instance!.window.platformBrightness;
+    var brightness = WidgetsBinding.instance.window.platformBrightness;
     brightness == Brightness.dark
         ? theme = MarvelHerosAppUiConfig.darkTheme
         : theme = MarvelHerosAppUiConfig.lightTheme;
