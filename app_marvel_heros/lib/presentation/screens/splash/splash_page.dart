@@ -1,5 +1,5 @@
-import 'package:app_marvel_heros/application/layout/app_gradients.dart';
-import 'package:app_marvel_heros/application/layout/app_images.dart';
+import 'package:app_marvel_heros/infrastructure/ultils/app_gradients.dart';
+import 'package:app_marvel_heros/infrastructure/ultils/app_images.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 

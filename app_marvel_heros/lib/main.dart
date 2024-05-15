@@ -1,4 +1,4 @@
-import 'package:app_marvel_heros/modules/splash/app_geek_plus/lib/Modules/splash/splash_page.dart';
+import 'package:app_marvel_heros/presentation/screens/splash/splash_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
