@@ -3,11 +3,10 @@ import 'package:app_marvel_heros/infrastructure/ultils/app_images.dart';
 import 'package:app_marvel_heros/presentation/screens/login/login_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
-import 'package:get/get_state_manager/src/simple/get_view.dart';
+import 'package:flutter_signin_button/flutter_signin_button.dart';
 
 class LoginPage extends GetView<LoginController> {
-  const LoginPage({Key? key}) : super(key: key);
+  const LoginPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -24,7 +23,7 @@ class LoginPage extends GetView<LoginController> {
               child: Column(
                 children: [
                   Image.asset(AppImages.logo),
-                  SizedBox(height: 50),
+                  const SizedBox(height: 50),
                   SizedBox(
                     width: Get.size.width * .9,
                     height: 42,

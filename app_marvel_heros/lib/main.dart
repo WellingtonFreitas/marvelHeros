@@ -1,17 +1,28 @@
 import 'package:app_marvel_heros/infrastructure/ultils/marvel_heros_app_ui_config.dart';
 import 'package:app_marvel_heros/presentation/navigation/login_module.dart';
 import 'package:app_marvel_heros/presentation/navigation/splash_module.dart';
-import 'package:app_marvel_heros/presentation/screens/splash/splash_page.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-
 import 'presentation/navigation/application_bindings.dart';
+import 'package:firebase_core/firebase_core.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+
+  FirebaseOptions firebaseOptions = const FirebaseOptions(
+    appId: 'com.example.app_marvel_heros',
+    apiKey: 'AIzaSyA6vnQQS180KKo1JlQs8GMwsNZdYWEzuck',
+    projectId: 'marvel-heros-bd2af',
+    messagingSenderId: '138874481724',
+  );
+
+  await Firebase.initializeApp(options: firebaseOptions);
   runApp(MyApp());
 }
 
 class MyApp extends StatefulWidget {
+  const MyApp({super.key});
+
   @override
   _MyAppState createState() => _MyAppState();
 }
