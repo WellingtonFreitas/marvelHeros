@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 class HomePage extends GetView<HomeController> {
-  const HomePage({Key? key}) : super(key: key);
+  const HomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -14,9 +14,8 @@ class HomePage extends GetView<HomeController> {
           // unselectedItemColor: context.greyColor,
           onTap: controller.goToPage,
           currentIndex: controller.pageIndex,
-          items: [
-            const BottomNavigationBarItem(
-                icon: Icon(Icons.movie), label: 'Filmes'),
+          items: const [
+            BottomNavigationBarItem(icon: Icon(Icons.movie), label: 'Filmes'),
             // BottomNavigationBarItem(
             //     // icon: Icon(GeekPlusIcons.heart_empty), label: 'Favoritos'),
             //      icon: Icon(GeekPlusIcons.heart_empty), label: 'Favoritos'),

@@ -1,4 +1,5 @@
 import 'package:app_marvel_heros/infrastructure/ultils/marvel_heros_app_ui_config.dart';
+import 'package:app_marvel_heros/presentation/navigation/home_module.dart';
 import 'package:app_marvel_heros/presentation/navigation/login_module.dart';
 import 'package:app_marvel_heros/presentation/navigation/splash_module.dart';
 import 'package:flutter/material.dart';
@@ -66,7 +67,7 @@ class _MyAppState extends State<MyApp> with WidgetsBindingObserver {
       getPages: [
         ...SplashModule().routers,
         ...LoginModule().routers,
-        // ...HomeModule().routers,
+        ...HomeModule().routers,
         // ...MovieDetailModule().routers,
       ],
     );

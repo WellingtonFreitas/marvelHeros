@@ -9,7 +9,7 @@ class HomeController extends GetxController {
   HomeController({required LoginService loginService})
       : _loginService = loginService;
 
-  final _pages = ['/movies', '/favorites'];
+  final _pages = ['/'];
   final _pageIndex = 0.obs;
 
   int get pageIndex => _pageIndex.value;
